@@ -1,9 +1,23 @@
-<title>My application</title>
-<h1>Hello, World!</h1>
-Result is {{result}}
-<form action="compute" method="post">
-<textarea name="input1" rows="10" cols="30"></textarea>
-<textarea name="input2" rows="10" cols="30"></textarea>
-<br>
-<input type="submit">
-</form>
+<title>My application deployed automatically</title>
+  <h1>Hello, World!</h1>
+  <h4>In the first form, enters a list of integers seperated by a new line character.<br>
+      In the second form, enter another integer.<br>
+      If this integer is found in the list, the result becomes true.<br>
+      In the third form, enters a list of integers seperated by a new line character.<br>
+      In the fourth form, enters an integer.<br>
+      Then the second result is that numbers in the list power given integer.<br></h4>
+
+
+    First result is {{result}}
+    <br>
+    Second result is {{result2}}
+
+
+  <form action="compute" method="post">
+        <textarea name="input1" rows="10" cols="30" placeholder="Enter numbers here..."></textarea>
+        <textarea name="input2" rows="10" cols="30" placeholder="Enter searched number here..."></textarea>
+        <textarea name="input3" rows="10" cols="30" placeholder="Enter numbers here..."></textarea>
+        <textarea name="input4" rows="10" cols="30" placeholder="Enter power here..."></textarea>
+        <br>
+        <input type="submit">
+  </form>
